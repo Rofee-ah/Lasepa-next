@@ -21,7 +21,7 @@ const Newsletter = () => {
                             <input type="text" placeholder="Email" className="p-3 w-full tablet:w-[80%] bg-transparent outline outline-1 outline-slate-200 rounded-xl placeholder:text-white caret-white text-white" />  
                             <button className="p-3 bg-[#0c691f] text-white font-bold w-full tablet:w-[20%] rounded-xl">Subcribe</button>     
                             </div>
-                            <p className="text-white float-start font-notoSans">We care about your data in our private policy
+                            <p className="text-white float-start font-notoSans tablet:mb-12">We care about your data in our private policy
 
 </p>
 

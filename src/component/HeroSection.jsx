@@ -10,10 +10,10 @@ const HeroSection = () => {
   return (
     <div className='relative bg-[#0c691f] h-screen w-full z-30'>
       <Swiper
-        spaceBetween={0}
+        spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 3000,
+          delay: 2500,
           disableOnInteraction: true,
         }}
         pagination={{
