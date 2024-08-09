@@ -30,13 +30,15 @@ const Header = () => {
       <div className='tablet:flex items-center justify-between bg-white py-4 tablet:px-10 px-7 '>
         <div className='font-bold text-2xl cursor-pointer flex items-center'>
           <span className=' mr-1  pt-0'>
-            <Image
-              src='/image/lasepa-logo.webp'
-              alt=''
-              width={100}
-              height={100}
-              className='w-48 mt-0 tablet:w-52'
-            />
+            <Link href='/'>
+              <Image
+                src='/image/lasepa-logo.webp'
+                alt=''
+                width={100}
+                height={100}
+                className='w-48 mt-0 tablet:w-52'
+              />
+            </Link>
           </span>
         </div>
 
@@ -64,7 +66,7 @@ const Header = () => {
               </a>
             </li>
           ))}
-          <Link href="/signup">
+          <Link href='/signup'>
             <Button>Register</Button>
           </Link>
         </ul>

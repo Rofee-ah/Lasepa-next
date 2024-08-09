@@ -1,3 +1,5 @@
+'use client'
+import Link from 'next/link';
 import Image from 'next/image';
 
 const page = () => {
@@ -6,13 +8,15 @@ const page = () => {
       <div className='fixed hidden min-h-screen tablet:block h-full p-8 bg-[#0c691f] tablet:w-[24%] desktop:w-[20%]'>
         <div className='flex flex-col h-full'>
           <div className='flex justify-center items-center gap-2 my-7 pb-8'>
-            <Image
-              src='/image/lasepa-logo.webp'
-              alt=''
-              width={100}
-              height={100}
-              className='w-48 mt-0 tablet:w-52 rounded-xl'
-            />
+            <Link href='/'>
+              <Image
+                src='/image/lasepa-logo.webp'
+                alt=''
+                width={100}
+                height={100}
+                className='w-48 mt-0 tablet:w-52 rounded-xl'
+              />
+            </Link>
           </div>
 
           <div className='flex flex-col gap-6'>
@@ -150,11 +154,13 @@ const page = () => {
               className='w-48 mt-0 tablet:w-48 rounded-xl'
             />
             <div className='flex items-center gap-6 text-base text-gray-700 font-telex'>
-                <p>Terms of Service</p>
-                <p>Documents</p>
-                <p>Contact Us</p>
+              <p>Terms of Service</p>
+              <p>Documents</p>
+              <p>Contact Us</p>
             </div>
-            <p className='text-base text-gray-700 font-telex italic'>© 2024. All Right Reserved</p>
+            <p className='text-base text-gray-700 font-telex italic'>
+              © 2024. All Right Reserved
+            </p>
           </div>
         </div>
       </div>
