@@ -2,18 +2,6 @@
 import { useState } from 'react';
 import Button from './Button';
 import Image from 'next/image';
-import { IonIcon } from '@ionic/react';
-import {
-  IonButtons,
-  IonContent,
-  IonHeader,
-  IonMenu,
-  IonMenuButton,
-  IonPage,
-  IonTitle,
-  IonToolbar,
-} from '@ionic/react';
-import { logoIonic } from 'ionicons/icons';
 import Link from 'next/link';
 
 const Header = () => {
@@ -46,32 +34,32 @@ const Header = () => {
           onClick={() => setOpen(!open)}
           className='text-3xl absolute right-8 top-6 cursor-pointer tablet:hidden bg-white'>
           <ion-icon
-            addIcon={open ? 'close' : 'Menu'}
-            role='img'
+            name={open ? 'close' : 'menu'}
             className='bg-white'></ion-icon>
         </div>
 
-        <ul
-          className={`tablet:flex tablet:items-center tablet:pb-0 pb-12 absolute tablet:static bg-white tablet:z-auto z-[-1] right-0 w-full tablet:w-auto tablet:pl-0 pl-9 transition-all duration-500 ease-in ${
-            open ? 'top-20 ' : 'top-[-490px]'
-          }`}>
-          {Links.map((link) => (
-            <li
-              key={link.name}
-              className='tablet:ml-8 text-xl text-nowrap tablet:my-0 my-7'>
-              <a
-                href={link.link}
-                className=' text-black font-bold hover:text-gray-400 duration-500'>
-                {link.name}
-              </a>
-            </li>
-          ))}
-          <Link href='/signup'>
-            <Button>Register</Button>
-          </Link>
-        </ul>
+        
+          <ul
+            className={`tablet:flex tablet:items-center tablet:pb-0 pb-20  absolute tablet:static  bg-white tablet: z-[100] right-0  tablet:w-auto tablet:pl-0 pl-10 transition-all duration-500 ease-in 
+          ${open ? 'top-30 ' : 'top-[-590px]'}`}>
+            {Links.map((link) => (
+              <li
+                key={link.name}
+                className='tablet:ml-8 text-xl text-nowrap tablet:my-0 my-7'>
+                <a
+                  href={link.link}
+                  className=' text-black font-bold hover:text-gray-400 duration-500'>
+                  {link.name}
+                </a>
+              </li>
+            ))}
+            <Link href='/signup'>
+              <Button>Register</Button>
+            </Link>
+          </ul>
+        </div>
       </div>
-    </div>
+    
   );
 };
 

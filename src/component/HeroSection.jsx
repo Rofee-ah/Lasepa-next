@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 const HeroSection = () => {
   return (
-    <div className='relative bg-[#0c691f] h-screen w-full z-30'>
+    <div className='relative bg-[#0c691f] h-screen w-full z-30 overflow-visible '>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
