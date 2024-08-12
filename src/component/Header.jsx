@@ -40,7 +40,7 @@ const Header = () => {
 
         
           <ul
-            className={`tablet:flex tablet:items-center tablet:pb-0 pb-20  absolute tablet:static  bg-white tablet: z-[100] right-0  tablet:w-auto tablet:pl-0 pl-10 transition-all duration-500 ease-in 
+            className={`tablet:flex tablet:items-center tablet:pb-0 pb-40 rounded-tl-2xl p-10 tablet:p-0  absolute tablet:static  bg-white tablet: z-[100] right-0  tablet:w-auto tablet:pl-0  transition-all duration-500 ease-in 
           ${open ? 'top-30 ' : 'top-[-590px]'}`}>
             {Links.map((link) => (
               <li
