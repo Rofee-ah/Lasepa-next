@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <div className=' w-full top-0 left-0 bg-white h-20'>
       <div className='tablet:flex items-center justify-between bg-white py-4 tablet:px-10 px-7 '>
-        <div className='font-bold text-2xl cursor-pointer flex items-center'>
+        <div className='font-semibold tablet:font-bold text-2xl cursor-pointer flex items-center'>
           <span className=' mr-1  pt-0'>
             <Link href='/'>
               <Image
